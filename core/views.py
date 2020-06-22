@@ -83,7 +83,7 @@ def delete_evento(resquest, id_evento):
     if usuario == evento.usuario:
         evento.delete()
     else:
-        raise Http404
+        raise Http404()
     return redirect('/')
 
 def json_lista_evento(request, id_usuario):
